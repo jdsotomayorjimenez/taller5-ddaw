@@ -3,3 +3,9 @@ export interface Contact {
     name: string;
     email: string;
 }
+
+export interface ContactDetail extends Contact {
+    phone: string;
+    website: string;
+    company: { name: string };
+}
